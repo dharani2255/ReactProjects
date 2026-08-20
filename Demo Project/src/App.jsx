@@ -70,7 +70,7 @@ function App() {
     return (
         <>    
            <Navbar setIsOpen = {setIsOpen} setSearch = {setSearch} setSearchType={setSearchType}/>
-           <NoteGrid notes={searchNotes} setEdit = {setEdit} deleteNote = {deleteNote} setSearch = {setSearch}/>
+           <NoteGrid notes={searchNotes} setEdit = {setEdit} deleteNote = {deleteNote} setSearch = {setSearch} setIsOpen={setIsOpen}/>
            {[
                 isOpen && (
                <NoteModel onClose={() => setIsOpen(false)}
